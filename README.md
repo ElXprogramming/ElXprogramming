@@ -1,7 +1,7 @@
-# Hi there 👋, I'm [Your Name]
+# Hi there 👋, I'm Eldion Ryan.
 ### A passionate [Front-End/Back-End/Full-Stack] Developer from [Location]
 
-- 📫 How to reach me: **[Your Email Address]**
+- 📫 How to reach me: **nayrnoidle@gmail.com**
 
 ---
 
