@@ -1,12 +1,7 @@
 # Hi there 👋, I'm [Your Name]
 ### A passionate [Front-End/Back-End/Full-Stack] Developer from [Location]
 
-- 🔭 I’m currently working on **[Current Project Name]**
-- 🌱 I’m currently learning **[Technology or Framework]**
-- 👯 I’m looking to collaborate on **[Open Source Projects]**
-- 💬 Ask me about **[Topics you are knowledgeable in]**
 - 📫 How to reach me: **[Your Email Address]**
-- ⚡ Fun fact: **[Insert a quirky or interesting fact about yourself]**
 
 ---
 
