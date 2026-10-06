@@ -1,5 +1,5 @@
 # Hi there 👋, I'm Eldion Ryan.
-### A passionate [Front-End/Back-End/Full-Stack] Developer from [Location]
+### A passionate Software Engineering Student from Sabah, Malaysia.
 
 - 📫 How to reach me: **nayrnoidle@gmail.com**
 
