@@ -7,7 +7,7 @@
 
 <br/>
 
-<!-- Modernized Contact Badges -->
+<!-- Contact Badges -->
 <a href="mailto:nayrnoidle@gmail.com">
   <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
 </a>
@@ -32,23 +32,34 @@
 <br/>
 <br/>
 
-## 📈 GitHub Analytics
+## 🏆 GitHub Stats
 
-<!-- Added hide_border=true for a cleaner look, and width=48% to make them large and side-by-side on desktop -->
-<img src="https://github-readme-stats.vercel.app/api?username=ElXprogramming&show_icons=true&theme=radical&hide_border=true" width="48%" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElXprogramming&layout=compact&theme=radical&hide_border=true" width="48%" />
+<!-- Individual Graphic for Each Stat (Trophies) -->
+<a href="https://github.com/ryo-ma/github-profile-trophy">
+  <img src="https://github-profile-trophy.vercel.app/?username=ElXprogramming&theme=radical&column=6&margin-w=15&margin-h=15&no-frame=true&no-bg=true" alt="Eldion Ryan's Trophies" />
+</a>
+
+<br/>
+<br/>
+
+## 📊 Top Languages
+
+<!-- Upgraded Donut Chart Design -->
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElXprogramming&layout=donut&theme=radical&hide_border=true&card_width=400" alt="Top Languages" />
 
 <br/>
 <br/>
 
 ## 📌 Featured Projects
 
-<!-- IMPORTANT: Replace 'YOUR_REPO_NAME' with the exact names of the repositories you want to pin -->
+<!-- Replace YOUR_REPO_NAME below if you want custom styled cards. Otherwise, you can delete this section and rely on GitHub's native pinned repos directly below your README -->
 <a href="https://github.com/ElXprogramming/YOUR_REPO_NAME_1" target="_blank">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=ElXprogramming&repo=YOUR_REPO_NAME_1&theme=radical&hide_border=true" width="45%" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=ElXprogramming&repo=YOUR_REPO_NAME_1&theme=radical&hide_border=true" />
 </a>
+<br/>
+<br/>
 <a href="https://github.com/ElXprogramming/YOUR_REPO_NAME_2" target="_blank">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=ElXprogramming&repo=YOUR_REPO_NAME_2&theme=radical&hide_border=true" width="45%" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=ElXprogramming&repo=YOUR_REPO_NAME_2&theme=radical&hide_border=true" />
 </a>
 
 </div>
