@@ -1,32 +1,54 @@
+<div align="center">
+
 # Hi there 👋, I'm Eldion Ryan.
 ### A passionate Software Engineering Student from Sabah, Malaysia.
 
-- 📫 How to reach me: **nayrnoidle@gmail.com**
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&pause=1000&color=FF3366&center=true&vCenter=true&width=435&lines=Software+Engineering+Student;Full-Stack+Developer;Always+Building)](https://git.io/typing-svg)
 
----
+<br/>
 
-### 🛠️ Tech Stack
-<!-- You can add or remove badges here. Find more logos at https://simpleicons.org/ -->
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-
----
-
-### 📈 GitHub Stats
-![Eldion Ryan's GitHub stats](https://github-readme-stats.vercel.app/api?username=ElXprogramming&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ElXprogramming&layout=compact&theme=radical)
-
----
-
-### 🤝 Connect with me
+<!-- Modernized Contact Badges -->
+<a href="mailto:nayrnoidle@gmail.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+</a>
 <a href="https://www.linkedin.com/in/eldion-ryan-godius-897064235" target="_blank">
-  <img align="left" alt="LinkedIn" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
 <a href="https://eldionryanportfolio.vercel.app/" target="_blank">
-  <img align="left" alt="Portfolio" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" />
+  <img src="https://img.shields.io/badge/Portfolio-252525?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Portfolio" />
 </a>
-<br />
-<br />
+
+<br/>
+<br/>
+
+## 🛠️ Tech Stack
+
+<img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
+<img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" />
+<img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+<img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" />
+<img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" />
+
+<br/>
+<br/>
+
+## 📈 GitHub Analytics
+
+<!-- Added hide_border=true for a cleaner look, and width=48% to make them large and side-by-side on desktop -->
+<img src="https://github-readme-stats.vercel.app/api?username=ElXprogramming&show_icons=true&theme=radical&hide_border=true" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElXprogramming&layout=compact&theme=radical&hide_border=true" width="48%" />
+
+<br/>
+<br/>
+
+## 📌 Featured Projects
+
+<!-- IMPORTANT: Replace 'YOUR_REPO_NAME' with the exact names of the repositories you want to pin -->
+<a href="https://github.com/ElXprogramming/YOUR_REPO_NAME_1" target="_blank">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=ElXprogramming&repo=YOUR_REPO_NAME_1&theme=radical&hide_border=true" width="45%" />
+</a>
+<a href="https://github.com/ElXprogramming/YOUR_REPO_NAME_2" target="_blank">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=ElXprogramming&repo=YOUR_REPO_NAME_2&theme=radical&hide_border=true" width="45%" />
+</a>
+
+</div>
