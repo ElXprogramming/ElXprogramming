@@ -16,21 +16,17 @@
 ---
 
 ### 📈 GitHub Stats
-<!-- IMPORTANT: Replace 'your-github-username' with your actual GitHub username below -->
-![[Your Name]'s GitHub stats](https://github-readme-stats.vercel.app/api?username=your-github-username&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=your-github-username&layout=compact&theme=radical)
+![Eldion Ryan's GitHub stats](https://github-readme-stats.vercel.app/api?username=ElXprogramming&show_icons=true&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ElXprogramming&layout=compact&theme=radical)
 
 ---
 
 ### 🤝 Connect with me
-<!-- Replace the href links with your actual profile URLs -->
-<a href="https://linkedin.com/in/your-linkedin-profile" target="_blank">
+<a href="https://www.linkedin.com/in/eldion-ryan-godius-897064235" target="_blank">
   <img align="left" alt="LinkedIn" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
 </a>
-<a href="https://twitter.com/your-twitter-handle" target="_blank">
-  <img align="left" alt="Twitter" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" />
-</a>
-<a href="https://your-portfolio-website.com" target="_blank">
+<a href="https://eldionryanportfolio.vercel.app/" target="_blank">
   <img align="left" alt="Portfolio" width="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" />
 </a>
+<br />
 <br />
