@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi there 👋, I'm Eldion Ryan.
+# Eldion Ryan.
 ### A passionate Software Engineering Student from Sabah, Malaysia.
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&pause=1000&color=FF3366&center=true&vCenter=true&width=435&lines=Software+Engineering+Student;Full-Stack+Developer;Always+Building)](https://git.io/typing-svg)
