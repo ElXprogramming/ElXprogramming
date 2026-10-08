@@ -32,19 +32,19 @@
 <br/>
 <br/>
 
-## 🏆 GitHub Stats
+## 📈 GitHub Analytics
 
-<!-- Individual Graphic for Each Stat (Trophies) -->
-<a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=ElXprogramming&theme=radical&column=6&margin-w=15&margin-h=15&no-frame=true&no-bg=true" alt="Eldion Ryan's Trophies" />
-</a>
+<!-- Main GitHub Stats -->
+<img src="https://github-readme-stats.vercel.app/api?username=ElXprogramming&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" />
 
 <br/>
+
+<!-- GitHub Contribution Streak -->
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=ElXprogramming&theme=radical&hide_border=true" alt="GitHub Streak" />
+
 <br/>
 
-## 📊 Top Languages
-
-<!-- Upgraded Donut Chart Design -->
+<!-- Top Languages Donut Chart -->
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElXprogramming&layout=donut&theme=radical&hide_border=true&card_width=400" alt="Top Languages" />
 
 <br/>
@@ -52,7 +52,7 @@
 
 ## 📌 Featured Projects
 
-<!-- Replace YOUR_REPO_NAME below if you want custom styled cards. Otherwise, you can delete this section and rely on GitHub's native pinned repos directly below your README -->
+<!-- Replace YOUR_REPO_NAME below to manually feature projects, or delete this section to let GitHub automatically display your pinned repos below the README -->
 <a href="https://github.com/ElXprogramming/YOUR_REPO_NAME_1" target="_blank">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=ElXprogramming&repo=YOUR_REPO_NAME_1&theme=radical&hide_border=true" />
 </a>
