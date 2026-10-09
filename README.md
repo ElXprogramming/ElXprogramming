@@ -47,19 +47,4 @@
 <!-- Top Languages Donut Chart -->
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElXprogramming&layout=donut&theme=radical&hide_border=true&card_width=400" alt="Top Languages" />
 
-<br/>
-<br/>
-
-## 📌 Featured Projects
-
-<!-- Replace YOUR_REPO_NAME below to manually feature projects, or delete this section to let GitHub automatically display your pinned repos below the README -->
-<a href="https://github.com/ElXprogramming/YOUR_REPO_NAME_1" target="_blank">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=ElXprogramming&repo=YOUR_REPO_NAME_1&theme=radical&hide_border=true" />
-</a>
-<br/>
-<br/>
-<a href="https://github.com/ElXprogramming/YOUR_REPO_NAME_2" target="_blank">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=ElXprogramming&repo=YOUR_REPO_NAME_2&theme=radical&hide_border=true" />
-</a>
-
 </div>
