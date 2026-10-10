@@ -7,7 +7,6 @@
 
 <br/>
 
-<!-- Contact Badges -->
 <a href="mailto:nayrnoidle@gmail.com">
   <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
 </a>
@@ -34,17 +33,14 @@
 
 ## 📈 GitHub Analytics
 
-<!-- Main GitHub Stats -->
 <img src="https://github-readme-stats.vercel.app/api?username=ElXprogramming&show_icons=true&theme=radical&hide_border=true&cache_seconds=1800" alt="GitHub Stats" />
 
 <br/>
 
-<!-- GitHub Contribution Streak -->
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=ElXprogramming&theme=radical&hide_border=true&cache_seconds=1800" alt="GitHub Streak" />
 
 <br/>
 
-<!-- Top Languages Donut Chart -->
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElXprogramming&layout=donut&theme=radical&hide_border=true&card_width=400&cache_seconds=1800" alt="Top Languages" />
 
 </div>
