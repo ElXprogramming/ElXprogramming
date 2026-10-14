@@ -77,6 +77,37 @@ const eldion = {
 
 <div align="center">
 
+### 🏅 Scorecard
+
+| Stat | Count | Grade |
+|:-----|:-----:|:-----:|
+| 📝 Commits | 23 | <img src="https://img.shields.io/badge/-C-f2a900?style=flat-square" alt="C" /> |
+| 📦 Repositories | 3 | <img src="https://img.shields.io/badge/-C-f2a900?style=flat-square" alt="C" /> |
+| 🌐 Polyglot (languages) | 5 | <img src="https://img.shields.io/badge/-C-f2a900?style=flat-square" alt="C" /> |
+| 👥 Followers | 6 | <img src="https://img.shields.io/badge/-D-e05d44?style=flat-square" alt="D" /> |
+| 🔀 Pull Requests | 0 | <img src="https://img.shields.io/badge/-%E2%80%93-555555?style=flat-square" alt="-" /> |
+| 🐛 Issues | 0 | <img src="https://img.shields.io/badge/-%E2%80%93-555555?style=flat-square" alt="-" /> |
+| ⭐ Stars Earned | 0 | <img src="https://img.shields.io/badge/-%E2%80%93-555555?style=flat-square" alt="-" /> |
+| 🏆 **Overall** | | <img src="https://img.shields.io/badge/-C-f2a900?style=flat-square" alt="C" /> |
+
+<details>
+<summary><sub>How grades are calculated</sub></summary>
+
+| Grade | Commits | Repos | Languages | Followers | PRs / Issues | Stars |
+|:-----:|:-------:|:-----:|:---------:|:---------:|:------------:|:-----:|
+| **S** | 1000+ | 50+ | 10+ | 500+ | 100+ | 500+ |
+| **A** | 500+ | 25+ | 8+ | 100+ | 50+ | 100+ |
+| **B** | 100+ | 10+ | 6+ | 25+ | 20+ | 25+ |
+| **C** | 20+ | 3+ | 4+ | 10+ | 5+ | 5+ |
+| **D** | 1+ | 1+ | 1+ | 1+ | 1+ | 1+ |
+| **–** | 0 | 0 | 0 | 0 | 0 | 0 |
+
+*Overall = average of ranked stats (S=5 … D=1). Unranked stats are left out. Last updated Oct 2026.*
+
+</details>
+
+<br/>
+
 <img height="180" src="https://github-readme-stats.vercel.app/api?username=ElXprogramming&show_icons=true&theme=radical&hide_border=true&cache_seconds=1800" alt="GitHub Stats" />
 <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElXprogramming&layout=compact&theme=radical&hide_border=true&card_width=400&cache_seconds=1800" alt="Top Languages" />
 
