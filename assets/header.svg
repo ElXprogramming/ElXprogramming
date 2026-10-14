@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="854" height="220" viewBox="0 0 854 220" role="img" aria-label="Eldion Ryan">
+  <style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'DejaVu Sans Mono',monospace}</style>
+  <defs>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+    <linearGradient id="line" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#ff2e88" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#ff2e88"/>
+      <stop offset="1" stop-color="#ff2e88" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="12" y="12" width="830" height="196" rx="18" fill="none" stroke="#ff2e88" stroke-width="3" opacity=".7" filter="url(#glow)"/>
+  <rect x="12" y="12" width="830" height="196" rx="18" fill="#0d1117" stroke="#ff2e88" stroke-width="1.5"/>
+  <text x="427" y="104" font-size="62" font-weight="700" fill="#ff2e88" text-anchor="middle" opacity=".6" filter="url(#glow)">ELDION RYAN</text>
+  <text x="427" y="104" font-size="62" font-weight="700" fill="#f0f6fc" text-anchor="middle">ELDION RYAN</text>
+  <rect x="227" y="124" width="400" height="2" fill="url(#line)"/>
+  <text x="427" y="158" font-size="15" letter-spacing="3" fill="#8b949e" text-anchor="middle">SOFTWARE ENGINEERING STUDENT</text>
+  <text x="427" y="182" font-size="12" letter-spacing="3" fill="#ff2e88" text-anchor="middle">SABAH · MALAYSIA</text>
+</svg>
