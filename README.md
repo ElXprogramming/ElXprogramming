@@ -75,22 +75,6 @@ const eldion = {
 <img width="100%" src="assets/languages.svg" alt="Top languages" />
 <img width="100%" src="assets/activity.svg" alt="Contribution heatmap for the last year" />
 
-## <details>
-##<summary><sub>How grades are calculated</sub></summary>
-
-##| Grade | Commits | Repos | Languages | Followers | PRs / Issues | Stars |
-##|:-----:|:-------:|:-----:|:---------:|:---------:|:------------:|:-----:|
-##| **S** | 1000+ | 50+ | 10+ | 500+ | 100+ | 500+ |
-##| **A** | 500+ | 25+ | 8+ | 100+ | 50+ | 100+ |
-##| **B** | 100+ | 10+ | 6+ | 25+ | 20+ | 25+ |
-##| **C** | 20+ | 3+ | 4+ | 10+ | 5+ | 5+ |
-##| **D** | 1+ | 1+ | 1+ | 1+ | 1+ | 1+ |
-##| **–** | 0 | 0 | 0 | 0 | 0 | 0 |
-
-##*Overall = average of ranked stats (S=5 … D=1). Unranked stats are left out.*
-
-##</details>
-
 <br/>
 
 > *"Talk is cheap. Show me the code."* — Linus Torvalds
