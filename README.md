@@ -1,10 +1,10 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=220&section=header&text=Eldion%20Ryan&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Software%20Engineering%20Student%20%7C%20Sabah%2C%20Malaysia&descSize=18&descAlignY=58" alt="Header" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=260&section=header&text=Eldion%20Ryan&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=45&desc=Software%20Engineering%20Student%20%7C%20Sabah%2C%20Malaysia&descSize=18&descAlignY=68" alt="Header" />
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=FF3366&center=true&vCenter=true&width=500&lines=Software+Engineering+Student;Full-Stack+Developer;Always+Building)](https://git.io/typing-svg)
 
-<img src="https://komarev.com/ghpvc/?username=ElXprogramming&label=Profile%20Views&color=ff3366&style=for-the-badge" alt="Profile views" />
+<img src="https://img.shields.io/badge/Location-Sabah%2C%20Malaysia-ff3366?style=for-the-badge&logo=googlemaps&logoColor=white&labelColor=252525" alt="Location" />
 <img src="https://img.shields.io/github/followers/ElXprogramming?label=Followers&style=for-the-badge&logo=github&color=ff3366&labelColor=252525" alt="Followers" />
 
 <br/>
@@ -84,10 +84,6 @@ const eldion = {
 
 <img src="https://streak-stats.demolab.com/?user=ElXprogramming&theme=radical&hide_border=true&cache_seconds=1800" alt="GitHub Streak" />
 
-<br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=ElXprogramming&theme=radical&no-frame=true&no-bg=true&margin-w=10&row=1&column=7" alt="GitHub Trophies" />
-
 </div>
 
 <br/>
@@ -95,8 +91,9 @@ const eldion = {
 ## 📊 Contribution Graph
 
 <div align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=ElXprogramming&theme=react-dark&bg_color=0d1117&color=ff3366&line=ff3366&point=ffffff&area=true&hide_border=true" alt="Contribution Graph" />
+  <img width="100%" src="https://ghchart.rshah.org/ff3366/ElXprogramming" alt="Contribution Graph" />
 </div>
+
 
 <br/>
 
