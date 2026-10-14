@@ -34,21 +34,34 @@ const eldion = {
 
 <div align="center">
 
+<!-- STACK:START -->
 <img src="https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=ff2e88" alt="JavaScript" />
 <img src="https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=ff2e88" alt="Python" />
 <img src="https://img.shields.io/badge/HTML5-0d1117?style=for-the-badge&logo=html5&logoColor=ff2e88" alt="HTML5" />
 <img src="https://img.shields.io/badge/CSS3-0d1117?style=for-the-badge&logo=css&logoColor=ff2e88" alt="CSS3" />
-<br/>
 <img src="https://img.shields.io/badge/React-0d1117?style=for-the-badge&logo=react&logoColor=ff2e88" alt="React" />
 <img src="https://img.shields.io/badge/Node.js-0d1117?style=for-the-badge&logo=nodedotjs&logoColor=ff2e88" alt="Node.js" />
 <img src="https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=ff2e88" alt="Git" />
 <img src="https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=ff2e88" alt="GitHub" />
 <img src="https://img.shields.io/badge/Vercel-0d1117?style=for-the-badge&logo=vercel&logoColor=ff2e88" alt="Vercel" />
 <img src="https://img.shields.io/badge/Linux-0d1117?style=for-the-badge&logo=linux&logoColor=ff2e88" alt="Linux" />
+<!-- STACK:END -->
 
 </div>
 
 <br/>
+
+## Projects
+
+<div align="center">
+
+<!-- PROJECTS:START -->
+<!-- PROJECTS:END -->
+
+</div>
+
+<br/>
+
 
 ## GitHub Stats
 

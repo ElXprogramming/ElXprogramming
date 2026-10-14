@@ -3,9 +3,12 @@
 
 Usage:
     GH_TOKEN=... GITHUB_REPOSITORY_OWNER=ElXprogramming python scripts/update_stats.py
-    python scripts/update_stats.py --demo      # render with sample data (no network)
+    python scripts/update_stats.py --demo      # render with sample data (no network, README untouched)
 
-Outputs (in ./assets): scorecard.svg, streak.svg, languages.svg, activity.svg, footer.svg
+Outputs:
+  assets/scorecard.svg, streak.svg, languages.svg, activity.svg, footer.svg
+  assets/projects/<repo>.svg   one card per pinned repo (falls back to recent public repos)
+  README.md                    the blocks between <!-- STACK:START/END --> and <!-- PROJECTS:START/END -->
 Only the Python standard library is used.
 """
 from __future__ import annotations
@@ -15,6 +18,8 @@ import os
 import random
 import re
 import sys
+import textwrap
+import urllib.parse
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
 from html import escape
@@ -47,6 +52,35 @@ THRESHOLDS = {
     "stars":     [500, 100, 25, 5, 1],
 }
 LETTERS = {5: "S", 4: "A", 3: "B", 2: "C", 1: "D", 0: "\u2013"}
+
+README = Path(__file__).resolve().parent.parent / "README.md"
+MAX_PROJECTS = 6
+MAX_STACK_LANGS = 10
+
+# Tech stack = languages detected from your public repos (automatic)
+#            + EXTRA_SKILLS below (manual: things GitHub can't detect, or that aren't in your public repos yet).
+# Each entry is (label, simple-icons slug).  Languages already detected are never shown twice.
+EXTRA_SKILLS = [
+    ("Python", "python"),
+    ("React", "react"),
+    ("Node.js", "nodedotjs"),
+    ("Git", "git"),
+    ("GitHub", "github"),
+    ("Vercel", "vercel"),
+    ("Linux", "linux"),
+]
+
+# GitHub language name -> (display label, simple-icons slug). Unknown languages get a badge without an icon.
+LANG_BADGES = {
+    "JavaScript": ("JavaScript", "javascript"), "TypeScript": ("TypeScript", "typescript"),
+    "Python": ("Python", "python"), "HTML": ("HTML5", "html5"), "CSS": ("CSS3", "css"),
+    "SCSS": ("SCSS", "sass"), "Shell": ("Shell", "gnubash"), "Java": ("Java", "openjdk"),
+    "C": ("C", "c"), "C++": ("C++", "cplusplus"), "C#": ("C#", "csharp"), "Go": ("Go", "go"),
+    "Rust": ("Rust", "rust"), "PHP": ("PHP", "php"), "Ruby": ("Ruby", "ruby"),
+    "Kotlin": ("Kotlin", "kotlin"), "Swift": ("Swift", "swift"), "Dart": ("Dart", "dart"),
+    "Lua": ("Lua", "lua"), "Vue": ("Vue", "vuedotjs"), "Dockerfile": ("Docker", "docker"),
+    "Jupyter Notebook": ("Jupyter", "jupyter"), "Svelte": ("Svelte", "svelte"),
+}
 
 
 # --------------------------------------------------------------------------- #
@@ -92,10 +126,13 @@ def fetch(login: str, token: str) -> dict:
         followers {{ totalCount }}
         pullRequests {{ totalCount }}
         issues {{ totalCount }}
+        pinnedItems(first: {MAX_PROJECTS}, types: REPOSITORY) {{
+          nodes {{ ... on Repository {{ {REPO_FIELDS} }} }}
+        }}
         repositories(ownerAffiliations: OWNER, privacy: PUBLIC, isFork: false, first: 100) {{
           totalCount
           nodes {{
-            stargazerCount
+            {REPO_FIELDS}
             languages(first: 10, orderBy: {{field: SIZE, direction: DESC}}) {{
               edges {{ size node {{ name }} }}
             }}
@@ -122,6 +159,14 @@ def fetch(login: str, token: str) -> dict:
         for edge in repo["languages"]["edges"]:
             langs[edge["node"]["name"]] = langs.get(edge["node"]["name"], 0) + edge["size"]
 
+    projects = [repo_info(n) for n in user["pinnedItems"]["nodes"] if n]
+    if not projects:   # nothing pinned: show the most recently pushed public repos instead
+        recent = sorted(
+            (n for n in user["repositories"]["nodes"] if n["name"].lower() != login.lower()),
+            key=lambda n: n["pushedAt"] or "", reverse=True,
+        )
+        projects = [repo_info(n) for n in recent[:MAX_PROJECTS]]
+
     return {
         "commits": commits,
         "prs": user["pullRequests"]["totalCount"],
@@ -130,7 +175,22 @@ def fetch(login: str, token: str) -> dict:
         "repos": user["repositories"]["totalCount"],
         "followers": user["followers"]["totalCount"],
         "languages": sorted(langs.items(), key=lambda kv: kv[1], reverse=True),
+        "projects": projects,
         "days": days,
+    }
+
+
+REPO_FIELDS = "name description url stargazerCount forkCount pushedAt primaryLanguage { name }"
+
+
+def repo_info(node: dict) -> dict:
+    return {
+        "name": node["name"],
+        "description": node.get("description") or "",
+        "url": node["url"],
+        "stars": node["stargazerCount"],
+        "forks": node["forkCount"],
+        "language": (node.get("primaryLanguage") or {}).get("name") or "",
     }
 
 
@@ -145,6 +205,14 @@ def demo_data() -> dict:
     return {
         "commits": 23, "prs": 0, "issues": 0, "stars": 0, "repos": 3, "followers": 6,
         "languages": [("TypeScript", 7194), ("Shell", 2198), ("HTML", 149), ("CSS", 428), ("JavaScript", 31)],
+        "projects": [
+            {"name": "EldionPortfolio", "description": "Personal portfolio website built with React and TypeScript, deployed on Vercel.",
+             "url": "https://github.com/ElXprogramming/EldionPortfolio", "stars": 3, "forks": 1, "language": "TypeScript"},
+            {"name": "dotfiles", "description": "", "url": "https://github.com/ElXprogramming/dotfiles",
+             "stars": 0, "forks": 0, "language": "Shell"},
+            {"name": "a-very-long-repository-name-that-overflows", "description": "x" * 120,
+             "url": "https://github.com/ElXprogramming/long", "stars": 1200, "forks": 45, "language": "Python"},
+        ],
         "days": days,
     }
 
@@ -422,8 +490,90 @@ def footer_card() -> str:
 
 
 # --------------------------------------------------------------------------- #
+# Projects + tech stack (these two also get written into README.md)
+# --------------------------------------------------------------------------- #
+def project_card(repo: dict) -> str:
+    w, h = 406, 130
+    name = repo["name"] if len(repo["name"]) <= 30 else repo["name"][:29] + "\u2026"
+    desc_lines = textwrap.wrap(repo["description"] or "No description yet.", 46)
+    if len(desc_lines) > 2:
+        desc_lines = desc_lines[:2]
+        desc_lines[1] = desc_lines[1][:45].rstrip() + "\u2026"
+    lit = bool(repo["description"])
+
+    parts = [svg_open(w + 2 * MARGIN, h + 2 * MARGIN), card_frame(MARGIN, MARGIN, w, h)]
+    parts.append(
+        f'<text x="{MARGIN + 18}" y="{MARGIN + 34}" font-size="17" font-weight="700" fill="{ACCENT}">'
+        f"{escape(name)}</text>"
+    )
+    for i, line in enumerate(desc_lines):
+        parts.append(
+            f'<text x="{MARGIN + 18}" y="{MARGIN + 60 + i * 19}" font-size="12.5" '
+            f'fill="{TEXT if lit else MUTED}">{escape(line)}</text>'
+        )
+
+    fy = MARGIN + h - 18
+    x = MARGIN + 18
+    if repo["language"]:
+        parts.append(
+            f'<circle cx="{x + 4}" cy="{fy - 4}" r="4.5" fill="{ACCENT}"/>'
+            f'<text x="{x + 15}" y="{fy}" font-size="12" fill="{TEXT}">{escape(repo["language"])}</text>'
+        )
+        x += 15 + 7.4 * len(repo["language"]) + 18
+    parts.append(
+        f'<text x="{x}" y="{fy}" font-size="12" fill="{MUTED}">'
+        f'{fmt(repo["stars"])} stars \u00b7 {fmt(repo["forks"])} forks</text>'
+    )
+    parts.append("</svg>")
+    return "".join(parts)
+
+
+def projects_markdown(projects: list[dict]) -> str:
+    if not projects:
+        return "<sub>No public projects yet.</sub>"
+    lines = []
+    for p in projects:
+        lines.append(
+            f'<a href="{escape(p["url"])}"><img width="48%" src="assets/projects/{escape(p["name"])}.svg" '
+            f'alt="{escape(p["name"])}" /></a>'
+        )
+    return "\n".join(lines)
+
+
+def badge(label: str, slug: str | None) -> str:
+    text = urllib.parse.quote(label.replace("-", "--").replace("_", "__").replace(" ", "_"), safe="")
+    logo = f"&logo={slug}&logoColor=ff2e88" if slug else ""
+    return (
+        f'<img src="https://img.shields.io/badge/{text}-0d1117?style=for-the-badge{logo}" '
+        f'alt="{escape(label)}" />'
+    )
+
+
+def stack_markdown(data: dict) -> str:
+    badges, seen = [], set()
+    for name, _ in sorted(data["languages"], key=lambda kv: kv[1], reverse=True)[:MAX_STACK_LANGS]:
+        label, slug = LANG_BADGES.get(name, (name, None))
+        seen.add(label.lower())
+        badges.append(badge(label, slug))
+    for label, slug in EXTRA_SKILLS:
+        if label.lower() not in seen:
+            badges.append(badge(label, slug))
+    return "\n".join(badges)
+
+
+def inject(text: str, name: str, content: str) -> str:
+    """Replace everything between <!-- NAME:START --> and <!-- NAME:END --> (markers are kept)."""
+    pattern = re.compile(rf"(<!-- {name}:START -->).*?(<!-- {name}:END -->)", re.DOTALL)
+    if not pattern.search(text):
+        print(f"warning: markers for {name} not found in README, skipping")
+        return text
+    return pattern.sub(lambda m: f"{m.group(1)}\n{content}\n{m.group(2)}", text)
+
+
+# --------------------------------------------------------------------------- #
 def main() -> None:
-    if "--demo" in sys.argv:
+    demo = "--demo" in sys.argv
+    if demo:
         data = demo_data()
     else:
         token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
@@ -443,6 +593,25 @@ def main() -> None:
     for name, content in cards.items():
         (ASSETS / name).write_text(content, encoding="utf-8")
         print(f"wrote assets/{name}")
+
+    # project cards: wipe old ones first so un-pinned repos don't linger
+    projects_dir = ASSETS / "projects"
+    projects_dir.mkdir(exist_ok=True)
+    for old in projects_dir.glob("*.svg"):
+        old.unlink()
+    for repo in data["projects"]:
+        (projects_dir / f"{repo['name']}.svg").write_text(project_card(repo), encoding="utf-8")
+        print(f"wrote assets/projects/{repo['name']}.svg")
+
+    if demo:
+        print("(demo mode: README.md left untouched)")
+        return
+    original = README.read_text(encoding="utf-8")
+    updated = inject(original, "STACK", stack_markdown(data))
+    updated = inject(updated, "PROJECTS", projects_markdown(data["projects"]))
+    if updated != original:
+        README.write_text(updated, encoding="utf-8")
+        print("updated README.md")
 
 
 if __name__ == "__main__":
