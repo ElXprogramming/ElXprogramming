@@ -39,6 +39,7 @@ const eldion = {
 <img src="https://img.shields.io/badge/Shell-0d1117?style=for-the-badge&logo=gnubash&logoColor=ff2e88" alt="Shell" />
 <img src="https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=ff2e88" alt="Python" />
 <img src="https://img.shields.io/badge/CSS3-0d1117?style=for-the-badge&logo=css&logoColor=ff2e88" alt="CSS3" />
+<img src="https://img.shields.io/badge/PLpgSQL-0d1117?style=for-the-badge" alt="PLpgSQL" />
 <img src="https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=ff2e88" alt="JavaScript" />
 <img src="https://img.shields.io/badge/HTML5-0d1117?style=for-the-badge&logo=html5&logoColor=ff2e88" alt="HTML5" />
 <img src="https://img.shields.io/badge/React-0d1117?style=for-the-badge&logo=react&logoColor=ff2e88" alt="React" />
