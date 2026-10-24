@@ -60,6 +60,7 @@ const eldion = {
 
 <!-- PROJECTS:START -->
 <a href="https://github.com/ElXprogramming/EldionPortfolio"><img width="48%" src="assets/projects/EldionPortfolio.svg" alt="EldionPortfolio" /></a>
+<a href="https://github.com/ElXprogramming/Grabfood-Data-Scraper"><img width="48%" src="assets/projects/Grabfood-Data-Scraper.svg" alt="Grabfood-Data-Scraper" /></a>
 <!-- PROJECTS:END -->
 
 </div>
