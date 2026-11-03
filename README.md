@@ -39,8 +39,8 @@ const eldion = {
 <img src="https://img.shields.io/badge/TypeScript-0d1117?style=for-the-badge&logo=typescript&logoColor=ff2e88" alt="TypeScript" />
 <img src="https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=ff2e88" alt="Python" />
 <img src="https://img.shields.io/badge/HTML5-0d1117?style=for-the-badge&logo=html5&logoColor=ff2e88" alt="HTML5" />
-<img src="https://img.shields.io/badge/CSS3-0d1117?style=for-the-badge&logo=css&logoColor=ff2e88" alt="CSS3" />
 <img src="https://img.shields.io/badge/Shell-0d1117?style=for-the-badge&logo=gnubash&logoColor=ff2e88" alt="Shell" />
+<img src="https://img.shields.io/badge/CSS3-0d1117?style=for-the-badge&logo=css&logoColor=ff2e88" alt="CSS3" />
 <img src="https://img.shields.io/badge/PLpgSQL-0d1117?style=for-the-badge" alt="PLpgSQL" />
 <img src="https://img.shields.io/badge/React-0d1117?style=for-the-badge&logo=react&logoColor=ff2e88" alt="React" />
 <img src="https://img.shields.io/badge/Node.js-0d1117?style=for-the-badge&logo=nodedotjs&logoColor=ff2e88" alt="Node.js" />
@@ -60,7 +60,7 @@ const eldion = {
 
 <!-- PROJECTS:START -->
 <a href="https://github.com/ElXprogramming/EldionPortfolio"><img width="48%" src="assets/projects/EldionPortfolio.svg" alt="EldionPortfolio" /></a>
-<a href="https://github.com/ElXprogramming/Grabfood-Data-Scraper"><img width="48%" src="assets/projects/Grabfood-Data-Scraper.svg" alt="Grabfood-Data-Scraper" /></a>
+<a href="https://github.com/ElXprogramming/RestaurantScraper"><img width="48%" src="assets/projects/RestaurantScraper.svg" alt="RestaurantScraper" /></a>
 <a href="https://github.com/ElXprogramming/neurosort"><img width="48%" src="assets/projects/neurosort.svg" alt="neurosort" /></a>
 <!-- PROJECTS:END -->
 
