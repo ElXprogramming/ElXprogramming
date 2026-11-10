@@ -1,87 +1,53 @@
-<div align="center">
-
-<img width="100%" src="assets/header.svg" alt="Eldion Ryan, Software Engineering Student, Sabah Malaysia" />
-
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&pause=1000&color=FF2E88&center=true&vCenter=true&width=500&lines=Full-Stack+Developer;Always+Building;Lifelong+Learner)](https://git.io/typing-svg)
-
-<a href="mailto:nayrnoidle@gmail.com">
-  <img src="https://img.shields.io/badge/Email-0d1117?style=for-the-badge&logo=gmail&logoColor=ff2e88" alt="Email" />
-</a>
-<a href="https://www.linkedin.com/in/eldion-ryan-godius-897064235" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0d1117?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2ZmMmU4OCIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8%2BPC9zdmc%2B" alt="LinkedIn" />
-</a>
-<a href="https://eldionryanportfolio.vercel.app/" target="_blank">
-  <img src="https://img.shields.io/badge/Portfolio-0d1117?style=for-the-badge&logo=googlechrome&logoColor=ff2e88" alt="Portfolio" />
-</a>
-
+<div>
+  <a href="https://github.com/ElXprogramming">
+    <img src="http://localhost:3000/api/cards/profile?username=ElXprogramming&theme=default" alt="Eldion Ryan Godius (@ElXprogramming)" height="82" align="left" />
+  </a>
+  <div align="right">
+    <a href="https://github.com/ElXprogramming"><img src="http://localhost:3000/api/cards/social?type=email&label=Email&theme=default" alt="Email" height="54" /></a>
+    <a href="https://linkedin.com"><img src="http://localhost:3000/api/cards/social?type=linkedin&label=LinkedIn&theme=default" alt="LinkedIn" height="54" /></a>
+    <a href="https://eldionryanportfolio.vercel.app/"><img src="http://localhost:3000/api/cards/social?type=portfolio&label=Portfolio&theme=default" alt="Portfolio" height="54" /></a>
+  </div>
 </div>
+<br clear="both" />
 
-<br/>
+### Pinned projects
 
-## About Me
+<p align="left">
+  <a href="https://github.com/ElXprogramming/RestaurantScraper"><img src="http://localhost:3000/api/cards/project?username=ElXprogramming&index=0&repo=RestaurantScraper&theme=default" alt="RestaurantScraper" width="48.6%" /></a>
+  <a href="https://github.com/ElXprogramming/GitCanvas"><img src="http://localhost:3000/api/cards/project?username=ElXprogramming&index=1&repo=GitCanvas&theme=default" alt="GitCanvas" width="48.6%" /></a>
+</p>
+<p align="left">
+  <a href="https://github.com/ElXprogramming/EldionPortfolio"><img src="http://localhost:3000/api/cards/project?username=ElXprogramming&index=2&repo=EldionPortfolio&theme=default" alt="EldionPortfolio" width="48.6%" /></a>
+  <a href="https://github.com/ElXprogramming/pern-forge"><img src="http://localhost:3000/api/cards/project?username=ElXprogramming&index=3&repo=pern-forge&theme=default" alt="pern-forge" width="48.6%" /></a>
+</p>
 
-```js
-const eldion = {
-  focus:     "Web development, front to back",
-  currently: "Shipping side projects",
-  open_to:   "Collaborations",
-};
-```
+### Languages
 
-<br/>
+<p align="left">
+  <img src="http://localhost:3000/api/cards/languages?username=ElXprogramming&theme=default" alt="ElXprogramming's Languages" width="98.5%" />
+</p>
 
-## Tech Stack
+### Github stats
 
-<div align="center">
+<p align="left">
+  <img src="http://localhost:3000/api/cards/commits?username=ElXprogramming&theme=default" alt="commits" width="23.8%" />
+  <img src="http://localhost:3000/api/cards/prs?username=ElXprogramming&theme=default" alt="PR" width="23.8%" />
+  <img src="http://localhost:3000/api/cards/issues?username=ElXprogramming&theme=default" alt="issues" width="23.8%" />
+  <img src="http://localhost:3000/api/cards/stars?username=ElXprogramming&theme=default" alt="stars earned" width="23.8%" />
+</p>
 
-<!-- STACK:START -->
-<img src="https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=ff2e88" alt="JavaScript" />
-<img src="https://img.shields.io/badge/TypeScript-0d1117?style=for-the-badge&logo=typescript&logoColor=ff2e88" alt="TypeScript" />
-<img src="https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=ff2e88" alt="Python" />
-<img src="https://img.shields.io/badge/HTML5-0d1117?style=for-the-badge&logo=html5&logoColor=ff2e88" alt="HTML5" />
-<img src="https://img.shields.io/badge/Shell-0d1117?style=for-the-badge&logo=gnubash&logoColor=ff2e88" alt="Shell" />
-<img src="https://img.shields.io/badge/CSS3-0d1117?style=for-the-badge&logo=css&logoColor=ff2e88" alt="CSS3" />
-<img src="https://img.shields.io/badge/PLpgSQL-0d1117?style=for-the-badge" alt="PLpgSQL" />
-<img src="https://img.shields.io/badge/React-0d1117?style=for-the-badge&logo=react&logoColor=ff2e88" alt="React" />
-<img src="https://img.shields.io/badge/Node.js-0d1117?style=for-the-badge&logo=nodedotjs&logoColor=ff2e88" alt="Node.js" />
-<img src="https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=ff2e88" alt="Git" />
-<img src="https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=ff2e88" alt="GitHub" />
-<img src="https://img.shields.io/badge/Vercel-0d1117?style=for-the-badge&logo=vercel&logoColor=ff2e88" alt="Vercel" />
-<img src="https://img.shields.io/badge/Linux-0d1117?style=for-the-badge&logo=linux&logoColor=ff2e88" alt="Linux" />
-<!-- STACK:END -->
+<p align="left">
+  <img src="http://localhost:3000/api/cards/repos?username=ElXprogramming&theme=default" alt="Repos" width="32%" />
+  <img src="http://localhost:3000/api/cards/polyglot?username=ElXprogramming&theme=default" alt="Polyglot" width="32%" />
+  <img src="http://localhost:3000/api/cards/overall?username=ElXprogramming&theme=default" alt="overall" width="32%" />
+</p>
 
-</div>
+<p align="left">
+  <img src="http://localhost:3000/api/cards/streak?username=ElXprogramming&theme=default" alt="streak" width="32%" />
+  <img src="http://localhost:3000/api/cards/longest-streak?username=ElXprogramming&theme=default" alt="longest streak" width="32%" />
+  <img src="http://localhost:3000/api/cards/active-days?username=ElXprogramming&theme=default" alt="active days this year" width="32%" />
+</p>
 
-<br/>
-
-## Projects
-
-<div align="center">
-
-<!-- PROJECTS:START -->
-<a href="https://github.com/ElXprogramming/EldionPortfolio"><img width="48%" src="assets/projects/EldionPortfolio.svg" alt="EldionPortfolio" /></a>
-<a href="https://github.com/ElXprogramming/RestaurantScraper"><img width="48%" src="assets/projects/RestaurantScraper.svg" alt="RestaurantScraper" /></a>
-<a href="https://github.com/ElXprogramming/neurosort"><img width="48%" src="assets/projects/neurosort.svg" alt="neurosort" /></a>
-<!-- PROJECTS:END -->
-
-</div>
-
-<br/>
-
-
-## GitHub Stats
-
-<div align="center">
-
-<img width="100%" src="assets/scorecard.svg" alt="Scorecard: commits, pull requests, issues, stars, repositories, followers, polyglot and overall grade" />
-<img width="100%" src="assets/streak.svg" alt="Current streak, longest streak and active days" />
-<img width="100%" src="assets/languages.svg" alt="Top languages" />
-<img width="100%" src="assets/activity.svg" alt="Contribution heatmap for the last year" />
-
-<br/>
-
-> *"Talk is cheap. Show me the code."* — Linus Torvalds
-
-<img width="100%" src="assets/footer.svg" alt="Auto-updated hourly" />
-
-</div>
+<p align="left">
+  <img src="http://localhost:3000/api/cards/contributions?username=ElXprogramming&theme=default" alt="contributions last year" width="98.5%" />
+</p>
