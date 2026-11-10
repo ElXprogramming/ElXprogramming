@@ -1,1 +1,1 @@
-![Eldion Ryan Godius's GitHub Profile](https://githubstatreadme.vercel.app/api/cards/canvas?username=ElXprogramming&theme=wano_zoro&font=josefin_slab&show_bio=1&bio_text=Software+Engineering+Student+eager+in+gathering+new+experience+in+collaborative+work.)
+![Eldion Ryan Godius's GitHub Profile](https://githubstatreadme.vercel.app/api/cards/canvas?username=ElXprogramming&theme=onepiece_gatling&font=josefin_slab&show_bio=1&bio_text=Software+Engineering+Student+eager+in+gathering+new+experience+in+collaborative+work.)
